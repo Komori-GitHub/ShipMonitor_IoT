@@ -1,0 +1,58 @@
+lineTension: 0.3,
+                    borderColor:'rgba(255,99,132,1)',
+                    backgroundColor:"rgba(0,0,0,0)"
+                }]
+            },
+            options:{
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Pitch',
+                        font: {
+                            size: 20
+                        }
+                    }
+                },
+                scales:{
+                    x:{
+                      title:{
+                        display:true,
+                        text:'Time[hh:mm:ss]'
+                      },
+
+                      ticks:{
+                        type:'time',
+			maxRotation: 0,
+			minRotation: 0,
+                        time:{
+                            parser:'HH:mm:ss',
+                            unit:'second',
+                            
+                        },
+                      }
+                    },
+
+                    y:{
+                        title:{
+                            display:true,
+                            text:'Pitch[deg]'
+                        },
+                        suggestedMax:6,
+                        suggestedMin:-6,
+                        ticks:{
+                            stepSize:2,
+                            callback:function(value,index,values){
+                                return value
+                            }
+                        }
+                    }
+                },
+            }
+
+        });
+    </script>
+    <script>
+        var ctx=document.getElementById("myLineChart3");
+        var myLineChart3 = new Chart(ctx,{
+            type:'line',
+            data:{

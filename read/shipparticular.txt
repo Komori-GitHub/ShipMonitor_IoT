@@ -1,0 +1,3 @@
+ship breadth	:11.1
+k		:0.42
+set direction	:2

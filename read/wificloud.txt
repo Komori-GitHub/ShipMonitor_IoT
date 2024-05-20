@@ -1,0 +1,4 @@
+WiFi ssid		:Extender-G-6A1C
+WiFi password		:c3xms4tcdychk
+Time difference[hour]	:9
+Google Spread Sheet URL	:https://script.google.com/macros/s/AKfycbzdKN8MC9u-kWoEB8GKqspoHZ_UN17kskzM4-qs4llhpiq-NmobqD_I020ydHADjlx1/exec

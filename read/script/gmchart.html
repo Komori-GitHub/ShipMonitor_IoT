@@ -1,0 +1,56 @@
+lineTension:0.0,
+borderColor:'rgba(255,99,132,1)',
+                backgroundColor:"rgba(0,0,0,0)"
+            }]
+        },
+        options:{
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'GM',
+                    font: {
+                        size: 20
+                    }
+                }
+            },
+            scales:{
+                x:{
+                    title:{
+                        display:true,
+                        text:'Time[hh:mm:ss]'
+                    },
+                      
+                    ticks:{
+                        type:'time',
+                        time: {
+                            parser: 'HH:mm:ss',
+                            unit: 'minute',
+                            stepSize: 10
+                        },
+						maxRotation: 0,
+						minRotation: 0,
+                    }
+                },
+                y:{
+                    title:{
+                        display:true,
+                        text:'GM[m]'
+                    },
+                    suggestedMax:4,
+                    suggestedMin:0,
+                    ticks:{
+                        stepSize:1,
+                        callback:function(value,index,values){
+                            return value
+                        }
+                    }
+                }
+            },
+        }
+
+        });
+    </script>
+
+</body>
+</html>
+ 

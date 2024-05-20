@@ -1,0 +1,56 @@
+lineTension:0.0,
+borderColor:'rgba(255,99,132,1)',
+                backgroundColor:"rgba(0,0,0,0)"
+            }]
+        },
+        options:{
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Pitching Period',
+                    font: {
+                        size: 20
+                    }
+                }
+            },
+            scales:{
+                x:{
+                    title:{
+                        display:true,
+		                text:'Time[hh:mm:ss]'
+                    },
+                    ticks:{
+                        type: 'time',
+			maxRotation: 0,
+			minRotation: 0,
+                        time: {
+                            parser: 'HH:mm:ss',
+                            unit: 'minute',
+                        }
+                    }
+                },
+                y:{
+                    title:{
+                        display:true,
+                        text:'Pitching Period[s]'
+                    },
+                    suggestedMax:20,
+                    suggestedMin:0,
+                    ticks:{
+                        stepSize:4,
+                        callback:function(value,index,values){
+                            return value
+                        }
+                    }
+                }
+            }
+        }
+
+        });
+    </script>
+    
+    <script>
+        var ctx=document.getElementById("myLineChart5");
+        var myLineChart5 = new Chart(ctx,{
+            type:'line',
+            data:{

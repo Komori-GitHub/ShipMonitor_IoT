@@ -1,0 +1,36 @@
+<head>
+    <meta chartset="utf-8">
+    <title>Graph</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+    <div style="position:relative;width:1000px;height:400px;">
+        <canvas id="myLineChart1"></canvas>
+    </div>
+    <h2> <br></h2>
+
+    <div style="position:relative;width:1000px;height:400px;">
+        <canvas id="myLineChart2"></canvas>
+    </div>
+    <h2> <br></h2>
+
+    <div style="position:relative;width:1000px;height:400px;">
+        <canvas id="myLineChart3"></canvas>
+    </div>
+    <h2> <br></h2>
+
+    <div style="position:relative;width:1000px;height:400px;">
+        <canvas id="myLineChart4"></canvas>
+    </div>
+    <h2> <br></h2>
+
+    <div style="position:relative;width:1000px;height:400px;">
+        <canvas id="myLineChart5"></canvas>
+    </div>
+
+    <script>
+        var ctx=document.getElementById("myLineChart1");
+        var myLineChart1 = new Chart(ctx,{
+            type:'line',
+            data:{
